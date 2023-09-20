@@ -1,0 +1,28 @@
+#menu {
+    background-color: #F52114 !important;
+}
+
+#apptitle {
+    color: white;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: Bold;
+    font-style: italic;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 40px;
+    color: white;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+}
+
+a {
+     color: white;
+     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

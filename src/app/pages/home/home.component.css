@@ -1,0 +1,9 @@
+#home {
+  overflow: hidden;
+  padding: 50px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+}

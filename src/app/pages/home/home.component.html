@@ -1,0 +1,8 @@
+<div id="home">
+    <h2>Our Courses</h2>
+   <app-coursebox *ngFor="let x of courses"
+     [ctitle]="x.name"
+     [cprice]="x.price"
+     [cimage]="x.image_name"
+   ></app-coursebox>
+</div>
