@@ -1,0 +1,38 @@
+#table-do {
+    width: 70%;
+    overflow-y: hidden;
+    margin: 50px;
+    margin-left: 13%;
+  
+}
+table{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100% !important;
+}
+
+th {
+    background-color: rgb(249, 19, 19) !important;
+    color: white;
+    height: 30px;
+  
+}
+
+td {
+    color: rgb(25, 24, 24);
+    height: 30px;
+}
+
+#registration-form {
+    margin: 50px;
+    width: 80%;
+    overflow-x: hidden;
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+h2 {
+    color: rgb(234, 13, 13);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+

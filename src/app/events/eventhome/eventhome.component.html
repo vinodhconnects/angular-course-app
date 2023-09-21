@@ -1,0 +1,40 @@
+<div id="table-do">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="workshopname">
+      <th mat-header-cell *matHeaderCellDef> Workshop Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.workshopname}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef> Venue </th>
+      <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="venue">
+      <th mat-header-cell *matHeaderCellDef> City  </th>
+      <td mat-cell *matCellDef="let element"> {{element.venue}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+</div>
+
+<div id="registration-form">
+    <h2> Register for the Event </h2>
+    <app-registration [events]="dataSource"></app-registration>
+</div>

@@ -1,0 +1,65 @@
+/* registration.component.css */
+
+/* Center the form on the page */
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  /* Full-width input fields */
+  .full-width {
+    width: 100%;
+  }
+  
+  /* Add some spacing between input fields */
+  .mat-form-field {
+    margin-bottom: 20px;
+  }
+  
+  /* Center the submit button */
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Style the form fields with Material Design */
+  .mat-form-field {
+    font-size: 16px;
+  }
+  
+  /* Style the select dropdown */
+  .mat-select {
+    width: 100%;
+  }
+  
+  /* Style the form label color */
+  .mat-form-field-label {
+    color: #333;
+  }
+  
+  /* Style the input text color */
+  .mat-input-element {
+    color: #333;
+  }
+  
+  /* Style the button color */
+  button[type="submit"] {
+    background-color: #1976D2;
+    color: #fff;
+  }
+  
+  /* Hover effect on the button */
+  button[type="submit"]:hover {
+    background-color: #1565C0;
+  }
+  
+
+  .error {
+    width: 60%;
+    margin-left: 40%;
+    color: red;
+}

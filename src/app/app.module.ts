@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { MenubarComponent } from './common/menubar/menubar.component';
 import { HomeComponent } from './pages/home/home.component';
-import { EventsComponent } from './pages/events/events.component';
+
 import { WorkshopsComponent } from './pages/workshops/workshops.component';
 import { ReachusComponent } from './pages/reachus/reachus.component';
 import { ReviewComponent } from './pages/review/review.component';
@@ -19,7 +19,6 @@ import { CourseboxComponent } from './pages/home/coursebox/coursebox.component';
     AppComponent,
     MenubarComponent,
     HomeComponent,
-    EventsComponent,
     WorkshopsComponent,
     ReachusComponent,
     ReviewComponent,

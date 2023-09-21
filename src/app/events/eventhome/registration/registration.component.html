@@ -1,0 +1,30 @@
+<form class="registration-form" (ngSubmit)="submitForm()">
+    <mat-form-field class="full-width">
+      <mat-label>Select Workshop</mat-label>
+      <mat-select [(ngModel)]="selectedWorkshop" name="workshop">
+        <mat-option *ngFor="let workshop of events" [value]="workshop.workshopname">
+          {{ workshop.workshopname }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Name" [(ngModel)]="name" name="name" >
+    </mat-form-field>
+  
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Email" [(ngModel)]="email" name="email" >
+    </mat-form-field>
+  
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Address" [(ngModel)]="address" name="address">
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">Register</button>
+  </form>
+  
+  <div class="error" *ngIf="errors.length>0">
+      <ul>
+          <li *ngFor="let x of errors">{{x}}</li>
+      </ul>
+  </div>
