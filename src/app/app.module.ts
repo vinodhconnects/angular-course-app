@@ -13,6 +13,10 @@ import { ReachusComponent } from './pages/reachus/reachus.component';
 import { ReviewComponent } from './pages/review/review.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CourseboxComponent } from './pages/home/coursebox/coursebox.component';
+import { CatpipePipe } from './pipes/catpipe.pipe';
+import { CfilterPipe } from './pipes/cfilter.pipe';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +26,18 @@ import { CourseboxComponent } from './pages/home/coursebox/coursebox.component';
     WorkshopsComponent,
     ReachusComponent,
     ReviewComponent,
-    CourseboxComponent
+    CourseboxComponent,
+    CatpipePipe,
+    CfilterPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

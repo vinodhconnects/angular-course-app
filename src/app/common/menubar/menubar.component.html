@@ -5,7 +5,10 @@
          <li><a routerLink="/">Home</a></li>
          <li><a routerLink="/events">Events</a></li>
          <li><a routerLink="/workshops">Workshops</a></li>
-         <li><a routerLink="/reviews">Reviews</a></li>
+         <li *ngIf="status"><a routerLink="/reviews" >Reviews</a></li>
          <li><a routerLink="/reachus">Reach Us</a></li>
       </ul>
+      <div class="login" (click)="clicked()">
+          {{loginText}}
+      </div>
     </mat-toolbar>

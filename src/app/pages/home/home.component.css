@@ -7,3 +7,17 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: darkred;
 }
+
+#filterbox{
+  padding: 50px;
+  margin: 20px;
+  border: 5px solid whitesmoke;
+  box-shadow:  10px 10px 20px whitesmoke;
+  color: rgb(61, 59, 59);
+}
+
+select {
+  height: 35px;
+  width: 250px;
+}
+

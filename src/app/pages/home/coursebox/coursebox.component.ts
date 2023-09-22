@@ -9,4 +9,5 @@ export class CourseboxComponent {
    @Input() cimage:string="" //input directive for app-coursebox
    @Input()  cprice:string=""
    @Input() ctitle:string=""
+   @Input() ccategory:string=""
 }

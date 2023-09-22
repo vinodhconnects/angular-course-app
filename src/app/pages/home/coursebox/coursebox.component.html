@@ -3,9 +3,11 @@
          <img src="http://localhost:8090/images/{{cimage}}">
      </div>
      <div class="ctitle">
-           {{ctitle}}
+      <img src="http://localhost:8090/images/{{ccategory|catpipe}}">
+           {{ctitle }}
+           
      </div>
      <div class="cprice">
-           Price : {{cprice}}
+           Price : {{cprice | currency:"INR"}}
      </div>
 </div>

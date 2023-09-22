@@ -1,8 +1,20 @@
 <div id="home">
     <h2>Our Courses</h2>
-   <app-coursebox *ngFor="let x of courses"
+    <div id="filterbox">
+       Price Range: <select [(ngModel)]="rselected" (change)="changed('p')">
+         <option *ngFor="let x of range">{{x}}</option>
+       </select>
+
+       <span [style.paddingLeft]="'150px'">Category: </span>
+       <select [(ngModel)]="cselected" (change)="changed('c')">
+        <option *ngFor="let x of category">{{x}}</option>
+      </select>
+      
+    </div>
+   <app-coursebox *ngFor="let x of courses | cfilter:cnow:cvalue"
      [ctitle]="x.name"
      [cprice]="x.price"
      [cimage]="x.image_name"
+     [ccategory]="x.category"
    ></app-coursebox>
 </div>

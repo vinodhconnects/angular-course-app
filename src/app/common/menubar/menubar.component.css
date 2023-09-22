@@ -1,5 +1,6 @@
 #menu {
     background-color: #F52114 !important;
+    position: relative;
 }
 
 #apptitle {
@@ -25,4 +26,13 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.login {
+    position: absolute;
+    left: 80%;
+    top: 10px;
+    color: white;
+    text-decoration: underline;
+    cursor:pointer;
 }

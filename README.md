@@ -1,27 +1,37 @@
-# Courseapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Pipe:
 
-## Development server
+  pipe is generally used in template in an angular application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  Pipes are applied either on Scalar variable or Arrays
 
-## Code scaffolding
+  1. Scalar variables [String, number, boolean]
+     if applied on scalar variable usually it formats the target
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+     ex:
+     uppercase pipe converts text to uppercase
+     currency pipe converts number to currency format
+     date pipe converts data to any required date format
 
-## Build
+     there are few inbuilt pipes supported by angular like uppercase,
+     lowercase, currency, date, percent... we can also create
+     our own pipes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  2. Pipes on arrays
+     If applied on arrays generally it will filter the target array
 
-## Running unit tests
+     there are no inbuilt pipes to be applied array but we can create
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+     Pipes has three parts
+     1. Target
+           variable on which pipe is applied
+     2. pipename
+            name of the pipe
+     3. parameters
+            parameters are optional but we can have one or parameter
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+             {name | uppercase}
+             name - target, uppercase - pipename, no parameter
+             {price | currency:'INR'} 
+              price -target ,currency - pipename, parameter - INR
+              

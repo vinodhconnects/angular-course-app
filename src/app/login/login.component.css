@@ -1,0 +1,33 @@
+/* login.component.css */
+
+/* Center the login form on the page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the form fields with Material Design */
+  .mat-form-field {
+    width: 400px !important;
+    margin-bottom: 20px; /* Add margin to create space between fields */
+    display: block; /* Display form fields as block elements */
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    width: 100%;
+  }
+  
+  /* Style the button color */
+  button[type="submit"] {
+    background-color: #1976D2;
+    color: #fff;
+  }
+  
+  /* Hover effect on the button */
+  button[type="submit"]:hover {
+    background-color: #1565C0;
+  }
+  
